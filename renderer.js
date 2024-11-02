@@ -31,8 +31,8 @@ function saveNote() {
   }
   notes.push(newNote);
   fs.writeFileSync(notesFile, JSON.stringify(notes));
-  loadNotes(); 
-  noteContent.value = '';
+  loadNotes();
+  noteContent.value = ''; 
 }
 
 saveButton.addEventListener('click', saveNote);
